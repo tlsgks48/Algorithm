@@ -41,6 +41,7 @@ public class Kakao2019_Winter {
 			}
 		}
 		
+		
 		System.out.println(answer);
 		System.out.println(board[3][0]);
 		
