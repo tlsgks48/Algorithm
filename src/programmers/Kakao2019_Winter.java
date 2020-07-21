@@ -23,7 +23,6 @@ public class Kakao2019_Winter {
 		}
 		
 		
-
 		for(int i=0; i<moves.length; i++) {
 			for(int j=0; j<board.length; j++) {
 				if(board[j][moves[i]-1] != 0) { // 크레인이 인형을 잡는다면...
