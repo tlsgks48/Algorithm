@@ -36,7 +36,7 @@ public class Hash1 { // 프로그래머스 - 해시 - 완주하지 못한 선수
 		Arrays.sort(participant);
 		System.out.println(participant[1]);
 		
-		// Collections.sort(sort); List의 정렬은 콜렉션함수를 써야함.
+		// Collections.sort(sort); List의 정렬은 콜렉션으로 써야함.
 		
 //		방식1. 참가자와 완주자를 비교해서 검사하려면 이중포문 형식이 되야함.
 //		int[] a = new int[participant.length];
