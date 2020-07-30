@@ -14,7 +14,6 @@ public class Kakao2019_Winter {
 		int[] moves = 	{1,5,3,5,1,2,1,4};
 		
 		List<Integer> basket = new ArrayList<Integer>();
-		
 		for(int i=0; i<5; i++) {
 			for(int j=0; j<5; j++) {
 				System.out.print("["+board[i][j]+"]");
@@ -44,6 +43,7 @@ public class Kakao2019_Winter {
 		
 		System.out.println(answer);
 		System.out.println(board[3][0]);
+		
 		
 		for(int i=0; i<5; i++) {
 			for(int j=0; j<5; j++) {
