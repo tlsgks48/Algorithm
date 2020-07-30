@@ -28,7 +28,7 @@ public class Kakao2019_Winter {
 					System.out.println(moves[i]-1+" 크레인위치, 인형 숫자 : "+board[j][moves[i]-1]);
 					basket.add(board[j][moves[i]-1]);
 					if(basket.size()>1) {
-						if(basket.get(basket.size()-1) == basket.get(basket.size()-2)) { // 옮긴 인형이 바구니 맨위 인형과 같다면..
+						if(basket.get(basket.size()-1) == basket.get(basket.size()-2)) { // 옮긴 인형이 바구니 맨위 인형과 같다면.
 							basket.remove(basket.size()-2); // 인형삭제
 							basket.remove(basket.size()-1); // 인형삭제
 							answer = answer+2; // 같아서 사라진 인형 2개추가.
