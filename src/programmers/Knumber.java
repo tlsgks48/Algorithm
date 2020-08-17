@@ -1,5 +1,7 @@
 package programmers;
 
+import java.util.ArrayList;
+
 public class Knumber {
 
 	public static void main(String[] args) {
@@ -9,8 +11,14 @@ public class Knumber {
 		
 		// 결론 : 결론은 짜르고 정렬해서 나온 k번째 위치의 값을 구하는것, 그리고 commands의 [i,j,k] 순으로 적용해서 나온 결과를 return에 담으시오.
 
-		int[] answer = {}, array;
-		int[][] commands;
+		int[] answer = {}, array = {1, 5, 2, 6, 3, 7, 4};
+		int[][] commands = {{2, 5, 3},{4, 4, 1},{1, 7, 3}};
+		
+		ArrayList<Integer> sort = new ArrayList<Integer>();
+		
+		
+		System.out.println(answer[0]);
+		
 	}
 
 }
