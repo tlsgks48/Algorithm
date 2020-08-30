@@ -20,12 +20,13 @@ public class Knumber {
 		ArrayList<Integer> sort = new ArrayList<Integer>();
 		
 		for(int i=0; i<commands.length; i++) {
+			sort.clear();
 			for(int j=commands[i][0]-1; j<commands[i][1]; j++) {
-				System.out.println(array[j]);
+				//System.out.println(array[j]);
 				sort.add(array[j]);
 			}
 			Collections.sort(sort);
-			System.out.println("");
+			answer[i] = sort.get(commands[i][2]-1);
 		}
 		
 		System.out.println("구분문@@@");
