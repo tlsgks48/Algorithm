@@ -15,17 +15,18 @@ public class Knumber {
 		int[] answer = {5}, array = {1, 5, 2, 6, 3, 7, 4};
 		int[][] commands = {{2, 5, 3},{4, 4, 1},{1, 7, 3}};
 		
+		// commands의 숫자만큼 answer설정.
 		answer = new int[commands.length];
 		
 		ArrayList<Integer> sort = new ArrayList<Integer>();
 		
 		for(int i=0; i<commands.length; i++) {
 			sort.clear();
-			for(int j=commands[i][0]-1; j<commands[i][1]; j++) {
+			for(int j=commands[i][0]-1; j<commands[i][1]; j++) { // 규칙대로 정렬
 				//System.out.println(array[j]);
 				sort.add(array[j]);
 			}
-			Collections.sort(sort);
+			Collections.sort(sort); // 정렬
 			answer[i] = sort.get(commands[i][2]-1);
 		}
 		
