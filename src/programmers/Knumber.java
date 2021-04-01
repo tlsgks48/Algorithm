@@ -6,7 +6,7 @@ import java.util.Collections;
 public class Knumber {
 
 	public static void main(String[] args) {
-		// TODO 자동 생성된 메소드 스텁
+		// TODO 자동 생성된 메소드 스텁 a
 		
 		// 문제: 배열 array의 i번째부터 j번째까지 자르고 정렬했을때 k번째 숫자를 구하는것.
 		
