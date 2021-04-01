@@ -34,8 +34,6 @@ public class Knumber {
 		System.out.println(answer.length);
 		System.out.println(commands.length);
 		System.out.println(commands[0][1]);
-		System.out.println(sort.get(1));
-		
 	}
 
 }
