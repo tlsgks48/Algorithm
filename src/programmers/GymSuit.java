@@ -1,5 +1,7 @@
 package programmers;
 
+import java.util.ArrayList;
+
 public class GymSuit {
 
 	public static void main(String[] args) {
@@ -11,8 +13,56 @@ public class GymSuit {
 
 		
 		// 푸는중
-		int answer = 0, n;
-		int[] lost, reserve;
-	}
+		int[] lost = {1,2}, reserve = {2,3};
+		int n = 3, answer = 0;
+		answer = n-lost.length;
+		
+		ArrayList<Integer> student = new ArrayList<Integer>();
+		
+		ArrayList<Integer> lost2 = new ArrayList<Integer>();
+		for(int i=0; i<lost.length; i++) {
+			lost2.add(lost[i]);
+		}
+		ArrayList<Integer> reserve2 = new ArrayList<Integer>();
+		for(int i=0; i<reserve.length; i++) {
+			reserve2.add(reserve[i]);
+		}
+		
+		for(int i=0; i<lost2.size(); i++) {
+			if(reserve2.contains(lost2.get(i))) {
+				reserve2.remove(lost2.get(i));
+				lost2.remove(lost2.get(i));
+				answer += 1;
+			}
+		}
+		
+		for(int i=0; i<lost2.size(); i++) {
+			for(int j=0; j<reserve2.size(); j++) {
+				if(lost2.get(i) == reserve2.get(j)+1 || lost2.get(i) == reserve2.get(j)-1 || lost2.get(i) == reserve2.get(j)) {
+					answer += 1;
+					lost2.remove(i);
+					reserve2.remove(j);
+					j = reserve2.size();
+					i = -1;
+				}
+			}
+		}
+		
+//		for(int i=0; i<lost.length; i++) {
+//			for(int j=0; j<reserve.length; j++) {
+//				if(lost[i] == reserve[j]+1 || lost[i] == reserve[j]-1 || lost[i] == reserve[j]) {
+//					if(student.size() > 0 && student.contains(reserve[j])) {
+//						j = reserve.length;
+//					}else {
+//						answer += 1;
+//						student.add(reserve[j]);
+//						j = reserve.length;
+//					}
+//				}
+//			}
+//		}
+		System.out.println("return값은 "+answer);
+		
+		}
 
 }
