@@ -1,6 +1,7 @@
 package programmers;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class 자주쓰는기능들 {
     public static void main(String[] args) {
@@ -33,6 +34,12 @@ public class 자주쓰는기능들 {
 
         System.out.println(list);
         System.out.println(Arrays.deepToString(list.toArray())); // [10, 20, 30]
+
+        list.sort(Comparator.naturalOrder()); // 오름차순 정렬 [10 , 20 , 30]
+        System.out.println("오름차순 정렬 : " + list);
+
+        list.sort(Comparator.reverseOrder()); // 내림차순 정렬 [30 , 20 , 10]
+        System.out.println("내림차순 정렬 : " + list);
 
         System.out.println(Arrays.toString(ms)); // Arrays.toString(배열) 기능을 사용하면 배열의 값 전체를 출력할 수 있다.
 
