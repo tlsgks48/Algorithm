@@ -18,7 +18,7 @@ public class 자주쓰는기능들 {
         System.out.println(ss.indexOf("b")); // 특정 문자나 문자열이 앞에서부터 처음 발견되는 인덱스를 반환하며 , 만약 찾지 못했을 경우 "-1"을 반환
         System.out.println(ss.lastIndexOf("b")); // 특정 문자나 문자열이 뒤에서부터 처음 발견되는 인덱스를 반환 , 만약 찾지 못했을 경우 "-1"을 반환
 
-        System.out.println(Integer.parseInt("456")); // 문자열 -> 인트로 변환.
+        System.out.println(Integer.parseInt("456")); // 문자열 -> int 로 변환. , int -> 문자열 변환 : Integer.toString(int)
 
         ss.replace("",""); // 문자열 내에 있는 모든 target 문자열을 replacement 문자열로 변환한 문자열을 반환
         ss.replaceAll("[aeiou]",""); // ＊정규표현식 regex와 매치되는 모든 문자열을 replacement 문자열로 변환한 문자열을 반환 , 예시 : [aeiou]는 []안에 있는 문자를 모두 변환하는 것.
@@ -39,6 +39,8 @@ public class 자주쓰는기능들 {
         StringBuilder sb = new StringBuilder("");
         sb.append("a"); // append는 뒤에서부터 붙이는 기능
         sb.insert(0,"b"); // insert는 앞에서부터 붙이는기능 , 0이면 맨앞
+
+        System.out.println(sb); // 문자열 변환
 
         int a = 12 % 7;
         System.out.println(a);
