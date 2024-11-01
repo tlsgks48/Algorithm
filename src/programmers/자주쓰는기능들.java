@@ -35,6 +35,7 @@ public class 자주쓰는기능들 {
         System.out.println(list);
         System.out.println(Arrays.deepToString(list.toArray())); // [10, 20, 30]
 
+        // 배열 정렬할 때는 Arrays.sort(배열) 오름차순 정렬 실행.
         list.sort(Comparator.naturalOrder()); // 오름차순 정렬 [10 , 20 , 30]
         System.out.println("오름차순 정렬 : " + list);
 
