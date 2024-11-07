@@ -29,6 +29,9 @@ public class 자주쓰는기능들 {
 
         String.join("" , ms); // 배열을 문자열로 합치는 기능 , delimiter로 구분자(, | 등)를 추가할 수 있다.
 
+        System.out.println("거듭 제곱 구하기 : " + (int)Math.pow(3,3)); // 거듭 제곱 구하기
+        System.out.println("제곱근 구하기 : " + Math.sqrt(16)); // 제곱근 구하기
+
         ArrayList<Integer> list = new ArrayList<Integer>();
         list.add(10);
         list.add(20);
