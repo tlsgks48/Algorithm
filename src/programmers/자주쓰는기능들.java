@@ -23,6 +23,8 @@ public class 자주쓰는기능들 {
 
         System.out.println(String.format("%5s" , "2311") ); // 문자열의 형식을 설정하는 함수 , 규칙 %s 앞에 숫자를 넣으면 길이가 고정
 
+        System.out.println(ss.matches("^[0-9]*$")); // 정규 표현식 사용 : ^[0-9]*$ , ^[a-zA-Z]*$ , ^[가-힣]*$ , 
+
         ss.replace("",""); // 문자열 내에 있는 모든 target 문자열을 replacement 문자열로 변환한 문자열을 반환
         ss.replaceAll("[aeiou]",""); // ＊정규표현식 regex와 매치되는 모든 문자열을 replacement 문자열로 변환한 문자열을 반환 , 예시 : [aeiou]는 []안에 있는 문자를 모두 변환하는 것.
         ss.replaceFirst("",""); // 문자열 내에 있는 정규식 regex와 매치되는 첫번째 문자열만 replacement 문자열로 변환한 문자열을 반환
