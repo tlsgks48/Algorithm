@@ -54,7 +54,6 @@ public class 자주쓰는기능들 {
         StringBuilder sb = new StringBuilder("");
         sb.append("a"); // append는 뒤에서부터 붙이는 기능
         sb.insert(0,"b"); // insert는 앞에서부터 붙이는기능 , 0이면 맨앞
-
         System.out.println(sb); // 문자열 변환
 
         int a = 12 % 7;
