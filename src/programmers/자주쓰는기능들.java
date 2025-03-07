@@ -63,5 +63,18 @@ public class 자주쓰는기능들 {
         System.out.println(bs);
         String bs1 = Integer.toBinaryString(19);
         System.out.println(bs1.charAt(2));
+
+        char[] arr = {'a', 't', 'b', 'c'};
+        Arrays.sort(arr);
+
+        System.out.println(Arrays.toString(arr));
+
+        String str = "Zbcdefg";
+        char[] charArr = str.toCharArray(); // String to Char Array
+        Arrays.sort(charArr); // Char Array 알파벳 순 정렬
+        // Char Array to String
+        String result = new String(charArr); // 또는 String.valueOf(charArr);
+
+        System.out.println(result);
     }
 }
