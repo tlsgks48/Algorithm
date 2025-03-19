@@ -80,5 +80,9 @@ public class 자주쓰는기능들 {
         String[] cho1 = {"c 9","c 7","x 1","e 2" , "ACE" , "ABE"};
         Arrays.sort(cho1);
         System.out.println(Arrays.toString(cho1));
+
+        String cho2 = "-1 -2 -3 -4";
+        System.out.println(Arrays.toString(cho2.split(" ")));
+
     }
 }
