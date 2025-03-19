@@ -76,5 +76,9 @@ public class 자주쓰는기능들 {
         String result = new String(charArr); // 또는 String.valueOf(charArr);
 
         System.out.println(result);
+
+        String[] cho1 = {"c 9","c 7","x 1","e 2" , "ACE" , "ABE"};
+        Arrays.sort(cho1);
+        System.out.println(Arrays.toString(cho1));
     }
 }
