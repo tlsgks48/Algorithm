@@ -5,7 +5,9 @@ public class 개미군단 {
         int answer = 0;
         int sum = hp % 5;
 
-        answer += hp/5;
+        if(hp >= 5) {
+            answer += hp/5;
+        }
 
         if(sum % 3 == 0) {
 
@@ -13,7 +15,7 @@ public class 개미군단 {
 
         } else {
 
-            answer += (sum /= 3) + (sum % 3);
+            answer += (sum % 3) + (sum /= 3);
 
         }
 
